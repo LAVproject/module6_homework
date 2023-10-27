@@ -1,5 +1,8 @@
+// Массив
+const array = [3, 7, true, 0, 7, 6, 4, 10, null, 5, 7, 0, 5, 2, 9, 2, undefined];
+
 // Функция получает и выводит в консоль четность элементов в массиве
-function getParityNumberArrayElements() {
+function getParityNumberArrayElements(array) {
     // Четных элементов
     let evenCount = 0;
     // Нечетный элементов
@@ -26,8 +29,6 @@ function getParityNumberArrayElements() {
         }
     })
 
-    // Выводим в консоль выбранный массив в виде строки
-    console.log('arrString(array)', arrString(array))
     // Выводим количество четных элементов
     console.log('evenCount', evenCount)
     // Выводим количество нечетных элементов
@@ -35,5 +36,6 @@ function getParityNumberArrayElements() {
     // Выводим количество нулевых элементов
     console.log('zeroCount', zeroCount)
 }
+
 // Вызываем функцию
-getParityNumberArrayElements()
+getParityNumberArrayElements(array)
